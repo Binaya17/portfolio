@@ -1138,7 +1138,15 @@
             <div class="portfolio-grid" id="portfolioGrid">
                 <!-- MrMeadow YouTube Channel -->
                 <div class="portfolio-item" data-category="video">
-                    <video src="https://player.cloudinary.com/embed/?cloud_name=dat4xffne&public_id=2_bgnwpu&profile=cld-default" controls></video>
+                    <iframe
+  src="https://player.cloudinary.com/embed/?cloud_name=dat4xffne&public_id=2_bgnwpu&profile=cld-default"
+  width="640"
+  height="360" 
+  style="height: auto; width: 100%; aspect-ratio: 640 / 360;"
+  allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+  allowfullscreen
+  frameborder="0"
+></iframe>
                     <div class="portfolio-info">
                         <h3>MrMeadow YouTube Channel</h3>
                         <p>Successful content creation channel with 132K+ subscribers. Running since 2022 with consistent growth and engagement.</p>
@@ -1434,6 +1442,12 @@
     <button class="back-to-top" id="backToTop" onclick="scrollToTop()">↑</button>
 
     <script>
+        const player = cloudinary.player('player', {
+  cloudName: 'dat4xffne',
+  publicId: '2_bgnwpu',
+  profile: 'cld-default'
+});
+        
         // Typing Animation
         const roles = [
             'Full Stack Developer',
@@ -1621,4 +1635,5 @@
     </script>
 </body>
 </html>
+
 
