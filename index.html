@@ -1174,7 +1174,15 @@
                 
                 <!-- Video Editing Samples -->
                 <div class="portfolio-item" data-category="video">
-                    <video src="3.mp4" controls></video>
+                    <iframe
+  src="https://player.cloudinary.com/embed/?cloud_name=dat4xffne&public_id=1_ebrlpr&profile=cld-default"
+  width="640"
+  height="360" 
+  style="height: auto; width: 100%; aspect-ratio: 640 / 360;"
+  allow="autoplay; fullscreen; encrypted-media; picture-in-picture"
+  allowfullscreen
+  frameborder="0"
+></iframe>
                     <div class="portfolio-info">
                         <h3>Vlog Channel Editing</h3>
                         <p>Professional editing work for client vlog channel during 3-month freelance project.</p>
@@ -1633,9 +1641,16 @@
   publicId: '2_bgnwpu',
   profile: 'cld-default'
 });
+
+        const player = cloudinary.player('player', {
+  cloudName: 'dat4xffne',
+  publicId: '1_ebrlpr',
+  profile: 'cld-default'
+});
     </script>
 </body>
 </html>
+
 
 
 
